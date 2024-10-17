@@ -1,0 +1,142 @@
+@keyframes fly-up {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+}
+
+.animate-fly-up {
+  animation: fly-up 3s forwards;
+}
+
+
+@keyframes in-out {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+}
+
+.animate-in-out {
+  animation: in-out 0.05s ease-in-out;
+}
+
+
+
+.tbd {
+  background: linear-gradient(90deg,#ba00fd,#2c1efe);
+  border: unset;
+  border-radius: 24px;
+  max-width: 560px;
+  padding: 4px;
+  position: relative;
+  width: 100%
+}
+
+
+.tbd__inner {
+  background: linear-gradient(180deg,#100e65,#4e215e);
+  border-radius: 22px;
+  padding: 24px
+}
+
+.boooox {
+  background: linear-gradient(180deg, #414344 0%, #2B2D2E 100%);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.30) inset, 0px 3px 5px 0px rgba(0, 0, 0, 0.40);
+}
+
+
+.orangebox {
+  border-radius: 83px;
+  background-image: linear-gradient(0.357turn, rgba(255, 110, 0, 1) 0%, rgba(172, 7, 254, 1) 100%);
+  border-color: transparent;
+  border-style: solid;
+}
+
+
+/* App.css */
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader img {
+  width: 100px;
+  height: 100px;
+}
+
+.spiner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: #09f;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.scrollable-container {
+  max-height: 200px; /* Adjust the height as needed */
+  overflow-y: auto;
+  overflow-x: auto;
+  padding-right: 8px; /* Adjust padding to avoid cutting off the scroll bar */
+}
+
+/* Optional: Style the scrollbar for better appearance */
+.scrollable-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.blurbox{
+  background-color: #F2F2FE1A;
+  backdrop-filter: blur(7px);
+  border-radius: 0px 0px 0px 0px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #FFFFFF47;
+} 
+
+.customShedow {
+  --tw-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.bg-lightDark {
+  background: linear-gradient(180deg, #1e1e1e, #121212);
+}
+
+.banner {
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  background-color: rgba(255, 255, 255, .16);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, .16));
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 80px 72px;
+  display: flex;
+}
